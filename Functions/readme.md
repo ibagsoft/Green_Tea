@@ -36,3 +36,8 @@ load-time branching pattern，帮助分支代码在初始化代码执行过程�
 3、性能模式，可以帮助加速代码运行
 memoization pattern，使用函数属性以便使得计算过的值无须再次计算
 self_definition pattern，以新的主体重写本身，以使得第二次或以后调用时仅需执行更少的工作
+
+
+扩展读物：
+Richard Cornford ： JavaScript Closures、《The Good Parts》~ JavaScript memoization
+Curry : Dojo、jQuery 、Prototype
