@@ -1,9 +1,16 @@
-var Base = require('./base').load(),
-	Parent = Base.Parent;
+//父构造函数
+function Parent (name) {
+	this.name = name || 'Adam';
+}
+//向该原型添加功能
+Parent.prototype.say = function () {
+	return this.name;
+};
+
 
 //寄生组合继承
 function inheritPrototype(subType, superType) {
-	var prototype = Object(superType.prototype); //创建对象
+	var prototype = Object.create(superType.prototype); //创建对象
 	prototype.constructor = subType; //增强对象
 	subType.prototype = prototype; //指定对象
 }
